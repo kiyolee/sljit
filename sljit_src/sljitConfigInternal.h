@@ -251,6 +251,18 @@ extern "C" {
 #define SLJIT_API_FUNC_ATTRIBUTE static
 #endif
 
+#elif (defined SLJIT_CONFIG_DLL && SLJIT_CONFIG_DLL)
+
+#if (defined SLJIT_BUILD_DLL && SLJIT_BUILD_DLL)
+#define SLJIT_API_FUNC_ATTRIBUTE __declspec(dllexport)
+#else
+#define SLJIT_API_FUNC_ATTRIBUTE __declspec(dllimport)
+#endif
+
+#elif (defined SLJIT_CONFIG_LIB && SLJIT_CONFIG_LIB)
+
+#define SLJIT_API_FUNC_ATTRIBUTE extern
+
 #else
 #define SLJIT_API_FUNC_ATTRIBUTE
 #endif /* (defined SLJIT_CONFIG_STATIC && SLJIT_CONFIG_STATIC) */
