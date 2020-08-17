@@ -89,6 +89,7 @@ static void cond_set(struct sljit_compiler *compiler, sljit_s32 dst, sljit_sw ds
 
 #if !(defined SLJIT_CONFIG_UNSUPPORTED && SLJIT_CONFIG_UNSUPPORTED)
 
+#ifndef SLJIT_CONFIG_DLL
 /* For interface testing and for test64. */
 void *sljit_test_malloc_exec(sljit_uw size, void *exec_allocator_data)
 {
@@ -103,6 +104,7 @@ void sljit_test_free_code(void* code, void *exec_allocator_data)
 {
 	SLJIT_BUILTIN_FREE_EXEC(code, exec_allocator_data);
 }
+#endif
 
 #define MALLOC_EXEC(result, size) \
 	result = SLJIT_MALLOC_EXEC(size, NULL); \
@@ -6300,6 +6302,7 @@ static void test63(void)
 
 static void test64(void)
 {
+#ifndef SLJIT_CONFIG_DLL
 	/* Test put label with absolute label addresses */
 	executable_code code;
 	sljit_uw malloc_addr;
@@ -6394,6 +6397,10 @@ static void test64(void)
 	FAILED(buf[4] != label[2].addr, "test64 case 6 failed\n");
 
 	sljit_free_code(code.code, NULL);
+#else
+	if (verbose)
+		printf("Skip test64\n");
+#endif
 
 	successful_tests++;
 }
