@@ -19,13 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\test_src\sljitMain.c" />
-    <ClCompile Include="..\..\test_src\sljitTest.c" />
+    <ClCompile Include="..\..\regex_src\regexJIT.c" />
+    <ClCompile Include="..\..\regex_src\regexMain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\regex_src\regexJIT.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}</ProjectGuid>
-    <RootNamespace>sljit-test</RootNamespace>
+    <ProjectGuid>{C11F7B4D-7257-493D-8117-E49AEB17BD94}</ProjectGuid>
+    <RootNamespace>regex_test</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
