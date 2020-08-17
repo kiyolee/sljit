@@ -7,22 +7,22 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsljit", "libsljit\libslj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsljit-static", "libsljit-static\libsljit-static.vcxproj", "{172A96F6-5829-4F92-A609-E3E0465B1EB0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regex-test", "regex-test\regex-test.vcxproj", "{C11F7B4D-7257-493D-8117-E49AEB17BD94}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regex_test", "regex_test\regex_test.vcxproj", "{C11F7B4D-7257-493D-8117-E49AEB17BD94}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8} = {6524E1DC-9869-4342-9097-5AB5CDB0B5A8}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regex-test-static", "regex-test-static\regex-test-static.vcxproj", "{AEC42D64-A553-4A93-90C5-73401336C74E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regex_test-static", "regex_test-static\regex_test-static.vcxproj", "{AEC42D64-A553-4A93-90C5-73401336C74E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{172A96F6-5829-4F92-A609-E3E0465B1EB0} = {172A96F6-5829-4F92-A609-E3E0465B1EB0}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sljit-test", "sljit-test\sljit-test.vcxproj", "{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sljit_test", "sljit_test\sljit_test.vcxproj", "{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8} = {6524E1DC-9869-4342-9097-5AB5CDB0B5A8}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sljit-test-static", "sljit-test-static\sljit-test-static.vcxproj", "{398E6D58-A390-4D0E-9C06-173A35CC3C56}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sljit_test-static", "sljit_test-static\sljit_test-static.vcxproj", "{398E6D58-A390-4D0E-9C06-173A35CC3C56}"
 	ProjectSection(ProjectDependencies) = postProject
 		{172A96F6-5829-4F92-A609-E3E0465B1EB0} = {172A96F6-5829-4F92-A609-E3E0465B1EB0}
 	EndProjectSection
