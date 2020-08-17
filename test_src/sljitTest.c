@@ -5315,6 +5315,7 @@ static void test50(void)
 
 static void test51(void)
 {
+#ifndef SLJIT_CONFIG_DLL
 	/* Test mov addr with absolute label addresses */
 	executable_code code;
 	sljit_uw malloc_addr;
@@ -5422,6 +5423,10 @@ static void test51(void)
 	FAILED(buf[8] != offs5, "test51 case 10 failed\n");
 
 	sljit_free_code(code.code, NULL);
+#else
+	if (verbose)
+		printf("Skip test51\n");
+#endif
 
 	successful_tests++;
 }
