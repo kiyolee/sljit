@@ -21,8 +21,5 @@
     <ClCompile Include="..\..\test_src\sljitMain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\sljit_src\sljitLir.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
