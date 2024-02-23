@@ -20,13 +20,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\sljit_src\sljitConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\sljit_src\sljitConfigInternal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\sljit_src\sljitLir.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\sljit_src\sljitConfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
