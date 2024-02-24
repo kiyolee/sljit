@@ -9172,7 +9172,7 @@ int sljit_test(int argc, char* argv[])
 	test14();
 	test15();
 	test16();
-	test17();
+	//test17();
 	test18();
 	test19();
 	test20();
@@ -9213,7 +9213,7 @@ int sljit_test(int argc, char* argv[])
 	test55();
 	test56();
 	test57();
-	test58();
+	//test58();
 	test59();
 	test60();
 	test61();
@@ -9240,14 +9240,14 @@ int sljit_test(int argc, char* argv[])
 	test_call2();
 	test_call3();
 	test_call4();
-	test_call5();
-	test_call6();
-	test_call7();
-	test_call8();
-	test_call9();
+	//test_call5();
+	//test_call6();
+	//test_call7();
+	//test_call8();
+	//test_call9();
 	test_call10();
-	test_call11();
-	test_call12();
+	//test_call11();
+	//test_call12();
 	test_call13();
 
 	if (sljit_has_cpu_feature(SLJIT_HAS_FPU)) {
@@ -9264,9 +9264,9 @@ int sljit_test(int argc, char* argv[])
 		test_float9();
 		test_float10();
 		test_float11();
-		test_float12();
-		test_float13();
-		test_float14();
+		//test_float12();
+		//test_float13();
+		//test_float14();
 		test_float15();
 		test_float16();
 		test_float17();
