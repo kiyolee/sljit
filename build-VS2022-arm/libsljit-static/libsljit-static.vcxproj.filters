@@ -29,5 +29,8 @@
     <ClInclude Include="..\..\sljit_src\sljitLir.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\sljit_src\sljitConfigCPU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

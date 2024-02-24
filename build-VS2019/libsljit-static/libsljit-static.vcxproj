@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\sljit_src\sljitConfig.h" />
+    <ClInclude Include="..\..\sljit_src\sljitConfigCPU.h" />
     <ClInclude Include="..\..\sljit_src\sljitConfigInternal.h" />
     <ClInclude Include="..\..\sljit_src\sljitLir.h" />
   </ItemGroup>
