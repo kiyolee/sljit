@@ -22,6 +22,12 @@
     <ClCompile Include="..\..\test_src\sljitMain.c" />
     <ClCompile Include="..\..\test_src\sljitTest.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\test_src\sljitTestCall.h" />
+    <ClInclude Include="..\..\test_src\sljitTestFloat.h" />
+    <ClInclude Include="..\..\test_src\sljitTestSerialize.h" />
+    <ClInclude Include="..\..\test_src\sljitTestSimd.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{398E6D58-A390-4D0E-9C06-173A35CC3C56}</ProjectGuid>
