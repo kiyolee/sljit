@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsljit", "libsljit\libsljit.vcxproj", "{6524E1DC-9869-4342-9097-5AB5CDB0B5A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsljit-static", "libsljit-static\libsljit-static.vcxproj", "{172A96F6-5829-4F92-A609-E3E0465B1EB0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regex_test", "regex_test\regex_test.vcxproj", "{C11F7B4D-7257-493D-8117-E49AEB17BD94}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8} = {6524E1DC-9869-4342-9097-5AB5CDB0B5A8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "regex_test-static", "regex_test-static\regex_test-static.vcxproj", "{AEC42D64-A553-4A93-90C5-73401336C74E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{172A96F6-5829-4F92-A609-E3E0465B1EB0} = {172A96F6-5829-4F92-A609-E3E0465B1EB0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sljit_test", "sljit_test\sljit_test.vcxproj", "{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8} = {6524E1DC-9869-4342-9097-5AB5CDB0B5A8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sljit_test-static", "sljit_test-static\sljit_test-static.vcxproj", "{398E6D58-A390-4D0E-9C06-173A35CC3C56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{172A96F6-5829-4F92-A609-E3E0465B1EB0} = {172A96F6-5829-4F92-A609-E3E0465B1EB0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Release|ARM64 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8}.Debug|ARM64.Build.0 = Debug|ARM64
+		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8}.Release|ARM64.ActiveCfg = Release|ARM64
+		{6524E1DC-9869-4342-9097-5AB5CDB0B5A8}.Release|ARM64.Build.0 = Release|ARM64
+		{172A96F6-5829-4F92-A609-E3E0465B1EB0}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{172A96F6-5829-4F92-A609-E3E0465B1EB0}.Debug|ARM64.Build.0 = Debug|ARM64
+		{172A96F6-5829-4F92-A609-E3E0465B1EB0}.Release|ARM64.ActiveCfg = Release|ARM64
+		{172A96F6-5829-4F92-A609-E3E0465B1EB0}.Release|ARM64.Build.0 = Release|ARM64
+		{C11F7B4D-7257-493D-8117-E49AEB17BD94}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{C11F7B4D-7257-493D-8117-E49AEB17BD94}.Debug|ARM64.Build.0 = Debug|ARM64
+		{C11F7B4D-7257-493D-8117-E49AEB17BD94}.Release|ARM64.ActiveCfg = Release|ARM64
+		{C11F7B4D-7257-493D-8117-E49AEB17BD94}.Release|ARM64.Build.0 = Release|ARM64
+		{AEC42D64-A553-4A93-90C5-73401336C74E}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{AEC42D64-A553-4A93-90C5-73401336C74E}.Debug|ARM64.Build.0 = Debug|ARM64
+		{AEC42D64-A553-4A93-90C5-73401336C74E}.Release|ARM64.ActiveCfg = Release|ARM64
+		{AEC42D64-A553-4A93-90C5-73401336C74E}.Release|ARM64.Build.0 = Release|ARM64
+		{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}.Debug|ARM64.Build.0 = Debug|ARM64
+		{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}.Release|ARM64.ActiveCfg = Release|ARM64
+		{E6E5CF3A-636F-41A8-8C5A-C4897A1BC7D7}.Release|ARM64.Build.0 = Release|ARM64
+		{398E6D58-A390-4D0E-9C06-173A35CC3C56}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{398E6D58-A390-4D0E-9C06-173A35CC3C56}.Debug|ARM64.Build.0 = Debug|ARM64
+		{398E6D58-A390-4D0E-9C06-173A35CC3C56}.Release|ARM64.ActiveCfg = Release|ARM64
+		{398E6D58-A390-4D0E-9C06-173A35CC3C56}.Release|ARM64.Build.0 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41A7BF4F-20D8-4DEE-90CC-0C732CA0735F}
+	EndGlobalSection
+EndGlobal

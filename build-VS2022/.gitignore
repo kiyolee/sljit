@@ -1,0 +1,14 @@
+*.VC.db
+*.log
+*.opensdf
+*.sdf
+*~
+/*/Debug
+/*/Release
+/*/x64/Debug
+/*/x64/Release
+/.vs
+/Debug
+/Release
+/x64/Debug
+/x64/Release
