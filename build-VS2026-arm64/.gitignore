@@ -1,0 +1,14 @@
+*.VC.db
+*.log
+*.opensdf
+*.sdf
+*~
+/*/ARM/Debug
+/*/ARM/Release
+/*/ARM64/Debug
+/*/ARM64/Release
+/.vs
+/ARM/Debug
+/ARM/Release
+/ARM64/Debug
+/ARM64/Release
